@@ -1,19 +1,21 @@
-const CompleteButton = () => {
+const CompleteButton = (update, id) => {
     const completeButton = document.createElement('button');
 
     completeButton.classList.add('check-button');
     completeButton.innerText = 'concluir';
-    completeButton.addEventListener('click', taskCompleted);
+    completeButton.addEventListener('click', () => taskCompleted(update, id));
 
     return completeButton;
 }
 
-const taskCompleted = (event) => {
-    const completeButton = event.target;
+const taskCompleted = (update, id) => {
+    const tasks =JSON.parse(localStorage.getItem('tasks')) || [];
+    
+    tasks[id].completed = !tasks[id].completed
 
-    const completeTask = completeButton.parentElement;
-
-    completeTask.classList.toggle('done');
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    
+    update();
 }
 
 export default CompleteButton;

@@ -162,6 +162,10 @@ body {
     margin: 0;
 }
 
+.content-date {
+    color: #F6F1D1;
+}
+
 .task.done .content {
     text-decoration: line-through;
 }
