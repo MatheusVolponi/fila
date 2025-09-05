@@ -47,4 +47,4 @@ O código é organizado de forma modular para facilitar a manutenção e a compr
 
 ## ✒️ Autoria
 
-Projeto desenvolvido por **[Seu Nome Aqui]**.
+Projeto desenvolvido por **Matheus Volponi**.
