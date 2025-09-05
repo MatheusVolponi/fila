@@ -2,6 +2,8 @@
 
 Este é um projeto de um simples gerenciador de tarefas (To-Do List) que permite ao usuário adicionar, visualizar, concluir e remover tarefas. As tarefas são agrupadas por data e salvas localmente no navegador usando o `LocalStorage`.
 
+**[Acesse a versão online do projeto clicando aqui!](https://matheusvolponi.github.io/fila/)**
+
 ## ✨ Funcionalidades
 
 - **Adicionar Tarefas:** Crie novas tarefas com descrição e data/hora.
